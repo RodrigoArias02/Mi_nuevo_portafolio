@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideleft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes floatImage {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes cross-step {
+  0% {
+    transform: translate(100px, -100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+html {
+  font-size: 55.5%;
+}
+@media (min-width: 800px) {
+  html {
+    font-size: 65%;
+  }
+}
+@media (min-width: 950px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  background: #1f242d;
+  color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: #1f242d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.header .sticky {
+  border-bottom: 0.1rem solid rgb(0, 0, 0);
+}
+.header #menu-icon {
+  font-size: 3.6rem;
+  display: none;
+}
+.header .header--logo {
+  font-size: 2.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+.header .header--navbar .header--item-active {
+  color: #0ef;
+}
+.header .header--navbar a {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 4rem;
+  transition: 0.3s;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+}
+.header .header--navbar a:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+.header .header--navbar a:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+.header .header--navbar a:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+.header .header--navbar a:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+.header .header--navbar a:nth-of-type(5) {
+  animation-delay: 1s;
+}
+.header .header--navbar a:hover {
+  color: #0ef;
+}
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header #menu-icon {
+    display: block;
+  }
+  .header .header--navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: #1f242d;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px -5px rgb(0, 0, 0);
+    display: none;
+  }
+  .header .header--navbar a {
+    display: block;
+    font-size: 2em;
+    margin: 3rem 0px;
+  }
+}
+.header .active {
+  display: block !important;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+@media (min-width: 768px) {
+  .main {
+    flex-direction: row;
+    padding: 70px 10% 0;
+  }
+}
+.main .main--content {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+.main .main--content .main--h1_cross {
+  opacity: 0;
+  animation: cross-step 1s ease forwards;
+  animation-delay: 0.7s;
+}
+.main .main--content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: -3px 0px;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 0.7s;
+}
+.main .main--content h1 span {
+  color: #0ef;
+}
+.main .main--content h3 {
+  font-size: 2em;
+  font-weight: 700;
+  opacity: 0;
+  animation: slideBottom 0.7s ease forwards;
+  animation-delay: 0.7s;
+}
+.main .main--content h3 span {
+  color: #0ef;
+}
+.main .main--content h3:nth-of-type(2) {
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: 0.7s;
+}
+.main .main--content h4 {
+  font-size: 1.5em;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 0.7s;
+}
+.main .main--content p {
+  font-size: 1.4rem;
+  animation: slideleft 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.9s;
+}
+.main .main--content .main--parrafo {
+  margin: 15px 0px;
+}
+.main .main--content .main--social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #0ef;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+  transition: 0.5s ease;
+  animation: slideleft 1s ease forwards;
+  opacity: 0;
+}
+.main .main--content .main--social-media a:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+.main .main--content .main--social-media a:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+.main .main--content .main--social-media a:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+.main .main--content .main--social-media a:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+.main .main--content .main--social-media a:nth-of-type(5) {
+  animation-delay: 1s;
+}
+.main .main--content .main--social-media a:hover {
+  background: #0ef;
+  color: #1f242d;
+  box-shadow: 0 0 20px #0ef;
+}
+.main .main--content .main--btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  border-radius: 40px;
+  box-shadow: 0 0 10px #0ef;
+  font-size: 1.3rem;
+  color: #1f242d;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideBottom 0.7s ease forwards;
+  animation-delay: 0.7s;
+}
+.main .main--img img {
+  max-width: 450px;
+  min-width: 280px;
+  width: 100%;
+  opacity: 0;
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
+}
+@media (min-width: 300px) {
+  .main .main--img img {
+    margin-right: -20px;
+  }
+}
+.main .main--img_yo img {
+  max-width: 450px;
+  min-width: 280px;
+  width: 100%;
+  margin-top: 30px;
+  opacity: 0;
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
+}
+
+/*# sourceMappingURL=styles.css.map */
