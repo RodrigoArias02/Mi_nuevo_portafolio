@@ -1,3 +1,28 @@
+@mixin btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: $primary--color;
+  border-radius: 40px;
+  box-shadow: 0 0 10px $primary--color;
+  font-size: 1.3rem;
+  color: #1f242d;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation-delay: 0.7s;
+}
+@mixin h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: -3px 0px;
+  opacity: 0;
+
+  animation-delay: 0.7s;
+  span {
+    color: $primary--color;
+  }
+}
 @mixin slideRight {
   animation: slideRight 1s ease forwards;
 }
