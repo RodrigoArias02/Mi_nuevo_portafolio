@@ -27,7 +27,7 @@
     </header>
 
     <main class="main--sobre_mi">
-      <div class="main--div hidden">
+      <div class="main--div hidden" id="inicio">
         <section class="main--img_yo">
           <img src="../imgs/Programadoor.png" alt="" />
         </section>
@@ -60,7 +60,7 @@
             Mi <span id="main--span-text">Educacion</span>
           </h1>
           <h4>Full stack developer!</h4>
-          <p>
+          <p class="main--p_education">
             Mi trayectoria educativa ha sido muy satisfactoria y estoy orgulloso
             de los logros que he alcanzado. Desde que comencé a estudiar,
             siempre tuve una gran pasión por la tecnología y la programación.
@@ -71,22 +71,30 @@
             mi tiempo en la escuela, aprendí los fundamentos de la programación
             tanto del lado del front-end como del back-end, lo que me permitió
             desarrollar habilidades sólidas y versátiles en programación.
-            Posteriormente, realicé un curso intensivo en Coderhouse, en el que
-            me recibí como desarrollador Full Stack. Este curso me permitió
-            adquirir habilidades avanzadas en diseño web y desarrollo de
-            aplicaciones, además de trabajar en proyectos prácticos en equipo.
-            Esto me enseñó habilidades importantes de trabajo en equipo y
-            colaboración, que son esenciales para el éxito en el campo de la
-            tecnología. En resumen, estoy muy satisfecho con mi trayectoria
-            educativa y siento que he adquirido habilidades valiosas que me
-            permitirán desarrollarme en el campo de la tecnología y la
-            programación en el futuro. Estoy emocionado de ver dónde me llevará
-            esta pasión en el futuro y estoy listo para enfrentar nuevos
-            desafíos y seguir aprendiendo.
+            Posteriormente, realicé
           </p>
+          <span class="hide" id="hideText">
+            un curso intensivo en Coderhouse, en el que me recibí como
+            desarrollador Full Stack. Este curso me permitió adquirir
+            habilidades avanzadas en diseño web y desarrollo de aplicaciones,
+            además de trabajar en proyectos prácticos en equipo. Esto me enseñó
+            habilidades importantes de trabajo en equipo y colaboración, que son
+            esenciales para el éxito en el campo de la tecnología. En resumen,
+            estoy muy satisfecho con mi trayectoria educativa y siento que he
+            adquirido habilidades valiosas que me permitirán desarrollarme en el
+            campo de la tecnología y la programación en el futuro. Estoy
+            emocionado de ver dónde me llevará esta pasión en el futuro y estoy
+            listo para enfrentar nuevos desafíos y seguir aprendiendo.</span
+          >
+          <button class="main--btn_read" id="hideText_btn">Leer mas</button>
         </section>
       </div>
     </main>
+    <footer class="footer">
+      <a href="#inicio" class="footer--btn_up"><i class="bx bxs-upvote"></i></a>
+      <p>Copyright &copy; Rodrigo Arias 2023. Todos los derechos reservados.</p>
+    </footer>
     <script src="../Js/header.js"></script>
+    <script src="../Js/readMore.js"></script>
   </body>
 </html>
