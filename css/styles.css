@@ -119,7 +119,7 @@ body {
   display: none;
 }
 .header .header--logo {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -132,11 +132,11 @@ body {
 }
 .header .header--navbar a {
   display: inline-block;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 4rem;
+  margin-left: 3.6rem;
   transition: 0.3s;
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
@@ -192,22 +192,28 @@ body {
 .main {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding: 70px 10% 0;
+  padding: 70px 5% 0;
 }
 @media (min-width: 768px) {
   .main {
     flex-direction: row;
     padding: 70px 10% 0;
   }
+  .main .main--content {
+    margin: 20px 0px 0px 0px;
+  }
 }
 .main .main--content {
+  height: 100%;
+  width: 100%;
   max-width: 600px;
-  margin-bottom: 40px;
+  margin: 20px 0px 30px 0px;
 }
 .main .main--content .main--h1_cross {
   opacity: 0;
@@ -255,6 +261,12 @@ body {
 }
 .main .main--content .main--parrafo {
   margin: 15px 0px;
+}
+.main .main--content .hideText {
+  display: none;
+}
+.main .main--content .showText {
+  display: block;
 }
 .main .main--content .main--social-media a {
   display: inline-flex;
@@ -308,6 +320,14 @@ body {
   animation: slideBottom 0.7s ease forwards;
   animation-delay: 0.7s;
 }
+.main .main--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 25px 0px;
+}
 .main .main--img img {
   max-width: 450px;
   min-width: 280px;
@@ -315,11 +335,6 @@ body {
   opacity: 0;
   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
   animation-delay: 2s, 3s;
-}
-@media (min-width: 300px) {
-  .main .main--img img {
-    margin-right: -20px;
-  }
 }
 .main .main--img_yo img {
   max-width: 450px;
