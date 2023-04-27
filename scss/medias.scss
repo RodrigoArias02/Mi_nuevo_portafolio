@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+  .main {
+    flex-direction: row;
+    padding: 70px 10% 0;
+    .main--content {
+      margin: 20px 0px 0px 0px;
+    }
+  }
+  //sobre-mi
+  .main--sobre_mi {
+    .main--div {
+      @media (min-width: 768px) {
+        flex-direction: row;
+        .main--img_titulo {
+          margin-right: 50px;
+        }
+        .main--img_yo {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+  //habilidades
+  .main--habilidades {
+    .main--div {
+      .main--a_trabajos {
+      }
+      .main--section_img {
+        justify-content: space-evenly;
+        margin: 5%;
+        img {
+          width: 10%;
+          height: 10%;
+        }
+      }
+    }
+  }
+}
