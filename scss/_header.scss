@@ -16,14 +16,19 @@ html {
   }
 }
 body {
+  display: flex;
   background: #1f242d;
   color: #fff;
+  padding-top: 80px;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .header {
-  position: fixed;
+  width: 100%;
+
   top: 0;
   left: 0;
-  width: 100%;
+  position: fixed;
   height: min-content;
   padding: 2rem 9%;
   background: #1f242d;
