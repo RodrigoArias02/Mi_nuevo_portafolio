@@ -1,6 +1,6 @@
 .main {
   @include main;
-
+  padding: 85px 5% 0;
   .main--content {
     height: 100%;
     width: 100%;
@@ -67,6 +67,7 @@
     .main--btn {
       @include btn;
       @include slideBottom;
+      animation-delay: 0.7s;
     }
   }
 
@@ -195,6 +196,7 @@
       margin-top: 15px;
       @include btn;
       @include slideBottom;
+      animation-delay: 0.7s;
     }
   }
 }
@@ -207,8 +209,10 @@
   display: inline;
 }
 
+//habilidades
 .main--habilidades {
   @include main;
+  padding: 85px 0;
 
   .hidden {
     opacity: 0;
@@ -221,14 +225,7 @@
     filter: blur(0px);
     transform: translateX(0px);
   }
-  h1 {
-    width: 100%;
-    text-align: start;
 
-    span {
-      color: $primary--color;
-    }
-  }
   p {
     font-size: 1.2rem;
     text-align: center;
@@ -240,14 +237,31 @@
     height: 100%;
     min-height: 100vh;
     flex-direction: column;
-
     align-items: center;
+    margin: 30px 0px 0px 0px;
+    padding: 0px 5%;
+    &:nth-child(2n) {
+      background: $third--color;
+    }
+    .main-section_h1 {
+      width: 100%;
+      h1 {
+        width: 100%;
+        text-align: start;
+        font-size: 1.9rem;
+
+        span {
+          color: $primary--color;
+        }
+      }
+    }
     .main--a_trabajos {
       @include btn;
       text-align: center;
       width: 50%;
       @include slideBottom;
       margin: 15% 0px;
+      animation-delay: 0.7s;
     }
     .main--section_img {
       display: flex;
@@ -258,6 +272,67 @@
         margin: 10px;
         width: 20%;
         height: 20%;
+      }
+    }
+  }
+}
+
+//contacto
+.main_contact {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 85px 10px;
+  .main_contact--section {
+    h2 {
+      margin-bottom: 3rem;
+      font-size: 2.3rem;
+      @include slideBottom;
+      animation-duration: 2s;
+      span {
+        color: $primary--color;
+      }
+    }
+    form {
+      max-width: 70rem;
+      margin: 1rem auto;
+      text-align: center;
+      margin-bottom: 3rem;
+
+      textarea {
+        resize: none;
+        @include slideleft;
+        animation-duration: 2s;
+      }
+      textarea,
+      .main--input_box input {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        color: #fff;
+        background: $quarter--color;
+        border-radius: 0.8rem;
+        margin: 0.7rem 0;
+        border: 0px;
+        &:focus {
+          outline: none;
+        }
+      }
+      .main--input_box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        input {
+          width: 49%;
+          @include slideRight;
+          animation-duration: 2s;
+        }
+      }
+      .main--btn_submit {
+        @include btn;
+        @include slideTop;
+        border: 0px solid;
+        animation-duration: 2s;
       }
     }
   }

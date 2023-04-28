@@ -105,6 +105,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  height: min-content;
   padding: 2rem 9%;
   background: #1f242d;
   display: flex;
@@ -289,8 +290,8 @@ body {
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
-  animation-delay: 0.7s;
   animation: slideBottom 0.7s ease forwards;
+  animation-delay: 0.7s;
 }
 .main .main--img {
   display: flex;
@@ -426,8 +427,8 @@ body {
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
-  animation-delay: 0.7s;
   animation: slideBottom 0.7s ease forwards;
+  animation-delay: 0.7s;
 }
 
 .hide {
@@ -448,7 +449,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding: 85px 5% 0;
+  padding: 85px 0;
 }
 .main--habilidades .hidden {
   opacity: 0;
@@ -461,13 +462,6 @@ body {
   filter: blur(0px);
   transform: translateX(0px);
 }
-.main--habilidades h1 {
-  width: 100%;
-  text-align: start;
-}
-.main--habilidades h1 span {
-  color: #0ef;
-}
 .main--habilidades p {
   font-size: 1.2rem;
   text-align: center;
@@ -479,6 +473,22 @@ body {
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
+  margin: 30px 0px 0px 0px;
+  padding: 0px 5%;
+}
+.main--habilidades .main--div:nth-child(2n) {
+  background: #323744;
+}
+.main--habilidades .main--div .main-section_h1 {
+  width: 100%;
+}
+.main--habilidades .main--div .main-section_h1 h1 {
+  width: 100%;
+  text-align: start;
+  font-size: 1.9rem;
+}
+.main--habilidades .main--div .main-section_h1 h1 span {
+  color: #0ef;
 }
 .main--habilidades .main--div .main--a_trabajos {
   display: inline-block;
@@ -492,11 +502,11 @@ body {
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
-  animation-delay: 0.7s;
   text-align: center;
   width: 50%;
   animation: slideBottom 0.7s ease forwards;
   margin: 15% 0px;
+  animation-delay: 0.7s;
 }
 .main--habilidades .main--div .main--section_img {
   display: flex;
@@ -507,6 +517,74 @@ body {
   margin: 10px;
   width: 20%;
   height: 20%;
+}
+
+.main_contact {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 85px 10px;
+}
+.main_contact .main_contact--section h2 {
+  margin-bottom: 3rem;
+  font-size: 2.3rem;
+  animation: slideBottom 0.7s ease forwards;
+  animation-duration: 2s;
+}
+.main_contact .main_contact--section h2 span {
+  color: #0ef;
+}
+.main_contact .main_contact--section form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.main_contact .main_contact--section form textarea {
+  resize: none;
+  animation: slideleft 1s ease forwards;
+  animation-duration: 2s;
+}
+.main_contact .main_contact--section form textarea,
+.main_contact .main_contact--section form .main--input_box input {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #323946;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+  border: 0px;
+}
+.main_contact .main_contact--section form textarea:focus,
+.main_contact .main_contact--section form .main--input_box input:focus {
+  outline: none;
+}
+.main_contact .main_contact--section form .main--input_box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main_contact .main_contact--section form .main--input_box input {
+  width: 49%;
+  animation: slideRight 1s ease forwards;
+  animation-duration: 2s;
+}
+.main_contact .main_contact--section form .main--btn_submit {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  border-radius: 40px;
+  box-shadow: 0 0 10px #0ef;
+  font-size: 1.3rem;
+  color: #1f242d;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+  border: 0px solid;
+  animation-duration: 2s;
 }
 
 .footer {
