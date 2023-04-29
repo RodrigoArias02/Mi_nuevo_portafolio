@@ -1,10 +1,10 @@
 @media (min-width: 768px) {
   .main {
     flex-direction: row;
-    padding: 70px 10% 0;
-    .main--content {
-      margin: 20px 0px 0px 0px;
-    }
+    padding: 10px 10% 0;
+
+    flex: 1;
+    align-items: flex-start;
   }
   //sobre-mi
   .main--sobre_mi {
