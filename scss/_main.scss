@@ -285,7 +285,7 @@
   .main_contact--section {
     overflow-x: hidden;
     h2 {
-      margin-bottom: 3rem;
+      margin: 1rem 0px 3rem 0px;
       font-size: 2.3rem;
       @include slideBottom;
       animation-duration: 2s;
@@ -336,6 +336,115 @@
         @include slideTop;
         border: 0px solid;
         animation-duration: 2s;
+      }
+    }
+  }
+}
+.main_t {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  flex: 1;
+  padding: 20px 10px 0px 10px;
+
+  .main--card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    max-height: 450px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: $third--color;
+    border-radius: 30px;
+    padding: 15px;
+    transform: scale(0.99);
+    transition: all 0.2s;
+    border: 2px solid $third--color;
+    margin: 10px 0px;
+    &:hover {
+      border: 2px solid $primary--color;
+      transform: scale(1);
+    }
+    .bx-window {
+      font-size: 5rem;
+      color: $primary--color;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    .main--card--p {
+      display: flex;
+      align-items: center;
+      overflow-y: hidden;
+      width: 100%;
+      height: 100%;
+      line-height: 23px;
+      font-size: 1.4rem;
+    }
+    a {
+      @include btn;
+      opacity: 1;
+      max-width: 180px;
+      margin: 30px 0px;
+    }
+    .main--card_footer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .main--card-p_stack {
+        text-align: start;
+        width: min-content;
+        height: min-content;
+        font-size: 1.3rem;
+      }
+      article {
+        width: 100%;
+        overflow-x: auto;
+        text-align: start;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 2.7rem;
+        .bxl-html5 {
+          color: #e34f26;
+        }
+        .bxl-sass {
+          color: #cc6699;
+        }
+        .bxl-javascript {
+          color: #f7df1e;
+        }
+        .bxl-nodejs {
+          color: #43853d;
+        }
+        .bxl-mongodb {
+          color: #47a248;
+        }
+        .bxl-php {
+          color: #4f5d95;
+        }
+        .bxs-data {
+          color: #4479a1;
+        }
+        .bxl-c-plus-plus {
+          color: #649ad2;
+        }
+        .bxl-python {
+          color: #ffd43b;
+        }
+        .bxl-visual-studio {
+          color: #8843ba;
+        }
+        .bxs-copyright {
+          color: #1770ff;
+        }
+        .bxs-file-json {
+          color: #9572a1;
+        }
       }
     }
   }
