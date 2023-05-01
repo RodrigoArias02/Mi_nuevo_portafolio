@@ -105,7 +105,7 @@
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100px);
-    transition: all 1s;
+    transition: main--sobre_mi 1s;
   }
   .show {
     opacity: 1;
@@ -216,7 +216,7 @@
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100px);
-    transition: all 1.5s;
+    transition: main--habilidades 1.5s;
   }
   .show {
     opacity: 1;
@@ -362,7 +362,7 @@
     border-radius: 30px;
     padding: 15px;
     transform: scale(0.99);
-    transition: all 0.2s;
+    transition: main--card 0.2s;
     border: 2px solid $third--color;
     margin: 10px 0px;
     &:hover {
