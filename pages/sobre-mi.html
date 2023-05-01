@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <title>Sombre mi</title>
   </head>
   <body>
@@ -29,7 +29,7 @@
     <main class="main--sobre_mi">
       <div class="main--div hidden" id="inicio">
         <section class="main--img_yo">
-          <img src="../imgs/Programadoor.png" alt="" />
+          <img class="lazy" data-src="../imgs/Programadoor.png" alt="" />
         </section>
         <section class="main--content">
           <h1 class="main--h1_cross">
@@ -53,7 +53,7 @@
       </div>
       <div class="main--div hidden" id="titulo">
         <section class="main--img_titulo">
-          <img src="../imgs/titulo.jpeg" alt="" />
+          <img class="lazy" data-src="../imgs/titulo.jpeg" alt="" />
         </section>
         <section class="main--content">
           <h1 class="main--h1_cross">
