@@ -56,11 +56,6 @@
         transition: 0.5s ease;
         @include slideleft;
         opacity: 0;
-        svg {
-          width: 24;
-          height: 24;
-          fill: $primary--color;
-        }
         @for $i from 1 through 5 {
           &:nth-of-type(#{$i}) {
             animation-delay: 0.2s * $i;
