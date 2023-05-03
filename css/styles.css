@@ -121,6 +121,7 @@ body {
   fill: #fff;
   width: 24px;
   height: 24px;
+  transform: scale(1.35);
 }
 .header .sticky {
   border-bottom: 0.1rem solid rgb(0, 0, 0);
@@ -204,7 +205,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -255,12 +255,11 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 33px;
-  height: 33px;
+  width: 45px;
+  height: 45px;
   background: transparent;
   border: 2px solid #0ef;
   border-radius: 50%;
-  font-size: 2rem;
   color: #0ef;
   text-decoration: none;
   margin: 30px 15px 30px 0;
@@ -288,13 +287,16 @@ body {
   color: #1f242d;
   box-shadow: 0 0 20px #0ef;
 }
+.main .main--content .main--social-media a i {
+  font-size: 3rem;
+}
 .main .main--content .main--btn {
   display: inline-block;
   padding: 12px 28px;
   background: #0ef;
   border-radius: 40px;
   box-shadow: 0 0 10px #0ef;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #1f242d;
   letter-spacing: 1px;
   text-decoration: none;
@@ -324,7 +326,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -349,25 +350,26 @@ body {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  padding: 0px 5%;
+  padding: 10% 5%;
 }
 .main--sobre_mi .main--div:nth-child(2) {
   background: #323744;
 }
 .main--sobre_mi .main--div .main--content {
   width: 100%;
+  height: 100%;
   height: min-content;
   max-width: 600px;
   margin: 20px 0px 30px 0px;
 }
 .main--sobre_mi .main--div .main--content .main--parrafo {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   margin: 15px 0px;
 }
 .main--sobre_mi .main--div .main--content .main--btn_read {
   background: transparent;
   color: #0ef;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   border: 0px;
   text-decoration: underline;
   cursor: pointer;
@@ -386,14 +388,14 @@ body {
   color: #0ef;
 }
 .main--sobre_mi .main--div .main--content h4 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: 0.7s;
 }
 .main--sobre_mi .main--div .main--content .main--p_education {
-  font-size: 1.1rem;
-  display: inline;
+  font-size: 1.6rem;
+  display: inline-block;
 }
 .main--sobre_mi .main--div .main--img_yo {
   display: flex;
@@ -428,7 +430,7 @@ body {
   background: #0ef;
   border-radius: 40px;
   box-shadow: 0 0 10px #0ef;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #1f242d;
   letter-spacing: 1px;
   text-decoration: none;
@@ -443,7 +445,7 @@ body {
 }
 
 .mostrar {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   display: inline;
 }
 
@@ -451,7 +453,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -469,7 +470,7 @@ body {
   transform: translateX(0px);
 }
 .main--habilidades p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 .main--habilidades .main--div {
@@ -502,7 +503,7 @@ body {
   background: #0ef;
   border-radius: 40px;
   box-shadow: 0 0 10px #0ef;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #1f242d;
   letter-spacing: 1px;
   text-decoration: none;
@@ -587,7 +588,7 @@ body {
   background: #0ef;
   border-radius: 40px;
   box-shadow: 0 0 10px #0ef;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #1f242d;
   letter-spacing: 1px;
   text-decoration: none;
@@ -602,7 +603,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -614,7 +614,7 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 350px;
-  max-height: 450px;
+  max-height: 500px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -644,7 +644,7 @@ body {
   width: 100%;
   height: 100%;
   line-height: 23px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .main_t .main--card a {
   display: inline-block;
@@ -652,7 +652,7 @@ body {
   background: #0ef;
   border-radius: 40px;
   box-shadow: 0 0 10px #0ef;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #1f242d;
   letter-spacing: 1px;
   text-decoration: none;
@@ -671,7 +671,7 @@ body {
   text-align: start;
   width: min-content;
   height: min-content;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 .main_t .main--card .main--card_footer article {
   width: 100%;
