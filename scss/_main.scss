@@ -43,6 +43,7 @@
     .main--social-media {
       a {
         display: inline-flex;
+
         justify-content: center;
         align-items: center;
         width: 45px;
@@ -67,7 +68,7 @@
           box-shadow: 0 0 20px $primary--color;
         }
         i {
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
       }
     }
