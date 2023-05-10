@@ -2,9 +2,12 @@
   .main {
     flex-direction: row;
     padding: 10px 10% 0;
-
     flex: 1;
-    align-items: flex-start;
+    align-items: center;
+    font-size: 100%;
+    .main--img {
+      justify-content: flex-end;
+    }
   }
   //sobre-mi
   .main--sobre_mi {

@@ -5,6 +5,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+  p {
+    font-size: 1.4rem;
+  }
   .footer--btn_up {
     display: flex;
     width: min-content;

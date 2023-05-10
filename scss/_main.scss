@@ -1,11 +1,11 @@
 .main {
   @include main;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
   padding: 0px 5% 0;
   overflow-x: hidden;
-
+  flex: 1;
   .main--content {
     height: 100%;
     width: 100%;
@@ -87,7 +87,7 @@
     height: 100%;
     padding: 25px 0px;
     img {
-      max-width: 450px;
+      max-width: 650px;
       min-width: 280px;
       width: 100%;
 
@@ -222,12 +222,16 @@
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100px);
-    transition: main--habilidades 1.5s;
+    transition-property: opacity, filter, transform;
+    transition-duration: 1.5s;
   }
+
   .show {
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0px);
+    transition-property: opacity, filter, transform;
+    transition-duration: 1.5s;
   }
 
   p {
@@ -246,6 +250,7 @@
     padding: 0px 5%;
     &:nth-child(2n) {
       background: $third--color;
+      padding-top: 25px;
     }
     .main-section_h1 {
       width: 100%;
@@ -358,8 +363,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    max-width: 350px;
+    max-width: 450px;
     max-height: 500px;
     justify-content: center;
     align-items: center;
@@ -368,12 +372,14 @@
     border-radius: 30px;
     padding: 15px;
     transform: scale(0.99);
-    transition: main--card 0.2s;
+
     border: 2px solid $third--color;
     margin: 10px 0px;
     &:hover {
       border: 2px solid $primary--color;
       transform: scale(1);
+      transition-property: border, scale;
+      transition-duration: 1.5s;
     }
     .bx-window {
       font-size: 5rem;
