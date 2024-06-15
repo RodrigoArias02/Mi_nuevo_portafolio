@@ -1,3 +1,6 @@
+<?php
+session_start(); // Iniciar la sesión
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,23 +15,24 @@
       name="keywords"
       content="C, C++, HTML5, CSS3, SASS, JavaScript, Node.js, Express, React.js, Python, MySQL, MongoDB, PHP, Visual Basic, JSON, programación, desarrollo web, desarrollo de software, aplicaciones móviles, proyectos de programación"
     />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styless.css" />
     <link rel="icon" href="../imgs/favicon.ico" />
     <title>Sombre mi</title>
   </head>
   <body id="inicio">
     <header class="header">
-      <a href="../index.html" class="header--logo">Mi Portafolio</a>
+      <a href="../index.php" class="header--logo">Mi Portafolio</a>
       <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg">
         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
       </svg>
 
       <nav class="header--navbar">
-        <a href="../index.html">Inicio</a>
+        <a href="../index.php">Inicio</a>
         <a href="#" class="header--item-active">Sobre mi</a>
-        <a href="habilidades.html">Habilidades</a>
-        <a href="trabajos.html">Portafolio</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="habilidades.php">Habilidades</a>
+        <a href="trabajos.php">Portafolio</a>
+        <a href="contacto.php">Contacto</a>
+        <?php include('../components/btnUsers.php') ?>
       </nav>
     </header>
 
@@ -90,6 +94,7 @@
       <p>Copyright &copy; Rodrigo Arias 2023. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script src="https://kit.fontawesome.com/4989dcb279.js" crossorigin="anonymous"></script>
     <script src="../Js/renderizadoImg.js"></script>
     <script src="../Js/header.js"></script>
     <script src="../Js/readMore.js"></script>

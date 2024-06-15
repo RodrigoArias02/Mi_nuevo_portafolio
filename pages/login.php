@@ -1,3 +1,6 @@
+<?php
+session_start(); // Iniciar la sesión
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +15,7 @@
       name="keywords"
       content="C, C++, HTML5, CSS3, SASS, JavaScript, Node.js, Express, React.js, Python, MySQL, MongoDB, PHP, Visual Basic, JSON, programación, desarrollo web, desarrollo de software, aplicaciones móviles, proyectos de programación"
     />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styless.css" />
 
     <link rel="icon" href="../imgs/favicon.ico" />
 
@@ -20,34 +23,30 @@
   </head>
   <body>
     <header class="header">
-      <a href="../index.html" class="header--logo">Mi Portafolio</a>
+      <a href="../index.php" class="header--logo">Mi Portafolio</a>
       <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg">
         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
       </svg>
       <nav class="header--navbar">
-        <a href="../index.html">Inicio</a>
-        <a href="sobre-mi.html">Sobre mi</a>
-        <a href="habilidades.html">Habilidades</a>
-        <a href="trabajos.html">Portafolio</a>
+        <a href="../index.php">Inicio</a>
+        <a href="sobre-mi.php">Sobre mi</a>
+        <a href="habilidades.php">Habilidades</a>
+        <a href="trabajos.php">Portafolio</a>
         <a href="#" class="header--item-active">Contacto</a>
+        <?php include('../components/btnUsers.php') ?>
       </nav>
     </header>
     <main class="main_contact">
       <section class="main_contact--section" id="contact">
         <h2 class="heading">
-          Contacta
-          <span>Conmigo!</span>
+          Inicie
+          <span>sesion!</span>
         </h2>
-        <form action="#">
+        <form action="../backend/admin/login.php" method="post">
           <div class="main--input_box">
-            <input type="text" placeholder="Nombre completo" />
-            <input type="email" placeholder="Correo electronico" />
+            <input type="email" name="email" placeholder="Correo electronico" />
+            <input type="password" name="password" placeholder="Contraseña" />
           </div>
-          <div class="main--input_box">
-            <input type="number" placeholder="Numero telefonico" />
-            <input type="text" placeholder="Asunto del correo" />
-          </div>
-          <textarea cols="30" rows="10" placeholder="Tu mensaje"></textarea>
           <input type="submit" value="Enviar mensaje" class="main--btn_submit" />
         </form>
       </section>

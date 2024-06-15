@@ -1,3 +1,6 @@
+<?php
+session_start(); // Iniciar la sesión
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,23 +15,24 @@
       name="keywords"
       content="C, C++, HTML5, CSS3, SASS, JavaScript, Node.js, Express, React.js, Python, MySQL, MongoDB, PHP, Visual Basic, JSON, programación, desarrollo web, desarrollo de software, aplicaciones móviles, proyectos de programación"
     />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styless.css" />
     <link rel="icon" href="../imgs/favicon.ico" />
 
     <title>Sombre mi</title>
   </head>
   <body id="inicio">
     <header class="header">
-      <a href="../index.html" class="header--logo">Mi Portafolio</a>
+      <a href="../index.php" class="header--logo">Mi Portafolio</a>
       <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg">
         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
       </svg>
       <nav class="header--navbar">
-        <a href="../index.html">Inicio</a>
-        <a href="sobre-mi.html">Sobre mi</a>
+        <a href="../index.php">Inicio</a>
+        <a href="sobre-mi.php">Sobre mi</a>
         <a href="#" class="header--item-active">Habilidades</a>
-        <a href="trabajos.html">Portafolio</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="trabajos.php">Portafolio</a>
+        <a href="contacto.php">Contacto</a>
+        <?php include('../components/btnUsers.php') ?>
       </nav>
     </header>
 
@@ -58,7 +62,7 @@
           </p>
         </section>
 
-        <a href="trabajos.html" class="main--a_trabajos">Ver trabajos</a>
+        <a href="trabajos.php" class="main--a_trabajos">Ver trabajos</a>
       </div>
 
       <div class="main--div hidden" id="titulo">
@@ -84,7 +88,7 @@
             experiencia en programación web, he adquirido habilidades valiosas en diferentes herramientas y lenguajes que me permiten crear aplicaciones web dinámicas y efectivas.
           </p>
         </section>
-        <a href="trabajos.html" class="main--a_trabajos">Ver trabajos</a>
+        <a href="trabajos.php" class="main--a_trabajos">Ver trabajos</a>
       </div>
 
       <div class="main--div hidden" id="titulo">
@@ -108,7 +112,7 @@
             desarrollo web y ampliar mi conocimiento en un área importante de la tecnología de la información.
           </p>
         </section>
-        <a href="trabajos.html" class="main--a_trabajos">Ver trabajos</a>
+        <a href="trabajos.php" class="main--a_trabajos">Ver trabajos</a>
       </div>
 
       <div class="main--div hidden" id="titulo">
@@ -137,7 +141,7 @@
             datos, el uso de estructuras de control de flujo y la creación y utilización de funciones.
           </p>
         </section>
-        <a href="trabajos.html" class="main--a_trabajos">Ver trabajos</a>
+        <a href="trabajos.php" class="main--a_trabajos">Ver trabajos</a>
       </div>
 
       <div class="main--div hidden" id="titulo">
@@ -161,7 +165,7 @@
             línea próspera de desarrolladores.
           </p>
         </section>
-        <a href="trabajos.html" class="main--a_trabajos">Ver trabajos</a>
+        <a href="trabajos.php" class="main--a_trabajos">Ver trabajos</a>
       </div>
     </main>
 
@@ -176,6 +180,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script src="https://kit.fontawesome.com/4989dcb279.js" crossorigin="anonymous"></script>
     <script src="../Js/renderizadoImg.js"></script>
     <script src="../Js/header.js"></script>
   </body>

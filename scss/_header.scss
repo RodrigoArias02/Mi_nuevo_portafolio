@@ -25,7 +25,6 @@ body {
 }
 .header {
   width: 100%;
-
   top: 0;
   left: 0;
   position: fixed;
@@ -72,7 +71,7 @@ body {
       margin-left: 3.6rem;
       transition: 0.3s;
       opacity: 0;
-      @for $i from 1 through 5 {
+      @for $i from 1 through 6 {
         &:nth-of-type(#{$i}) {
           animation-delay: 0.2s * $i;
         }

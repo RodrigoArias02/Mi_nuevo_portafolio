@@ -587,8 +587,7 @@ body {
   overflow-x: hidden;
 }
 .main_contact .main_contact--section form textarea,
-.main_contact .main_contact--section form input,
-.main_contact .main_contact--section form select {
+.main_contact .main_contact--section form input, .main_contact .main_contact--section form select {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
@@ -599,8 +598,7 @@ body {
   border: 0px;
 }
 .main_contact .main_contact--section form textarea:focus,
-.main_contact .main_contact--section form input:focus,
-.main_contact .main_contact--section form select:focus {
+.main_contact .main_contact--section form input:focus, .main_contact .main_contact--section form select:focus {
   outline: none;
 }
 .main_contact .main_contact--section form input {
@@ -710,14 +708,6 @@ body {
 }
 .main_t .main--card h2 {
   font-size: 2rem;
-}
-.main_t .main--card .card--span {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  justify-content: end;
-  align-items: start;
 }
 .main_t .main--card .main--card--p {
   display: flex;
@@ -859,4 +849,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styless.css.map */

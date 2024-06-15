@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @keyframes slideRight {
   0% {
@@ -695,6 +696,7 @@ body {
   border-radius: 30px;
   padding: 15px;
   transform: scale(0.99);
+  position: relative;
   border: 2px solid #323744;
   margin: 10px 0px;
 }
@@ -712,16 +714,20 @@ body {
   font-size: 2rem;
 }
 .main_t .main--card .card--span {
-  display: flex;
-  width: 100%;
-  height: 100%;
   position: absolute;
-  justify-content: end;
-  align-items: start;
+  top: 10px; /* Ajusta la distancia desde arriba según tu diseño */
+  right: 10px; /* Ajusta la distancia desde la derecha según tu diseño */
+}
+.main_t .main--card .card--span .span-icon--github {
+  width: 37px;
+  text-align: center;
+  margin: 10px;
+  padding: 5px 10px;
 }
 .main_t .main--card .main--card--p {
   display: flex;
-  align-items: center;
+  align-items: start;
+  padding: 10px 0px;
   overflow-y: hidden;
   width: 100%;
   height: 100%;
@@ -859,4 +865,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=stylesss.css.map */

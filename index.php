@@ -1,3 +1,6 @@
+<?php
+session_start(); // Iniciar la sesión
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +16,7 @@
       content="C, C++, HTML5, CSS3, SASS, JavaScript, Node.js, Express, React.js, Python, MySQL, MongoDB, PHP, Visual Basic, JSON, programación, desarrollo web, desarrollo de software, aplicaciones móviles, proyectos de programación"
     />
     <link rel="icon" href="imgs/favicon.ico" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styless.css" />
 
     <title>Inicio</title>
   </head>
@@ -25,10 +28,11 @@
       </svg>
       <nav class="header--navbar">
         <a href="#" class="header--item-active">Inicio</a>
-        <a href="pages/sobre-mi.html">Sobre mi</a>
-        <a href="pages/habilidades.html">Habilidades</a>
-        <a href="pages/trabajos.html">Portafolio</a>
-        <a href="pages/contacto.html">Contacto</a>
+        <a href="pages/sobre-mi.php">Sobre mi</a>
+        <a href="pages/habilidades.php">Habilidades</a>
+        <a href="pages/trabajos.php">Portafolio</a>
+        <a href="pages/contacto.php">Contacto</a>
+        <?php include('./components/btnUsers.php') ?>
       </nav>
     </header>
     <main class="main">
@@ -44,7 +48,7 @@
           back-end, puedo crear aplicaciones completas desde cero, desde el diseño hasta la implementación.
         </p>
         <article class="main--social-media">
-          <a href="index.html">
+          <a href="index.php">
             <i class="fa-brands fa-facebook"></i>
           </a>
           <a href="https://github.com/RodrigoArias02">
@@ -57,7 +61,7 @@
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </article>
-        <a href="Profile.pdf" class="main--btn">Descargar CV</a>
+        <a href="Curriculum.pdf" class="main--btn">Descargar CV</a>
       </section>
       <section class="main--img">
         <img src="imgs/programadorbarba.webp" alt="Un programador programadon" width="100%" height="100%" />

@@ -293,8 +293,14 @@
   text-align: center;
   padding: 0px 10px;
   flex: 1;
+  .main__content--section-admin {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+  }
   .main_contact--section {
     overflow-x: hidden;
+
     h2 {
       margin: 1rem 0px 3rem 0px;
       font-size: 2.3rem;
@@ -303,6 +309,23 @@
 
       span {
         color: $primary--color;
+      }
+    }
+    .main_contact--div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      margin-top: 20px;
+
+      h2 {
+        font-size: 1.8rem;
+        width: min-content;
+        flex-grow: 1;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
       }
     }
     form {
@@ -318,7 +341,8 @@
         overflow-x: hidden;
       }
       textarea,
-      .main--input_box input {
+      input,
+      select {
         width: 100%;
         padding: 1.5rem;
         font-size: 1.6rem;
@@ -331,15 +355,52 @@
           outline: none;
         }
       }
+      input {
+        @include slideleft;
+      }
+      .main--h3_box {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 10px 0px;
+        @include slideleft;
+        h3 {
+          font-size: 1.5rem;
+          width: 50%;
+          padding: 10px 0px;
+        }
+      }
       .main--input_box {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         input {
           width: 49%;
+          @include slideleft;
+          animation-duration: 2s;
+        }
+        select {
+          width: 49%;
 
           @include slideleft;
           animation-duration: 2s;
+        }
+        .main--input_box_long {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          input {
+            width: 49%;
+            @include slideleft;
+            animation-duration: 2s;
+          }
+          select {
+            width: 49%;
+
+            @include slideleft;
+            animation-duration: 2s;
+          }
         }
       }
       .main--btn_submit {
@@ -351,6 +412,12 @@
     }
   }
 }
+.scale {
+  transform: scale(0.8);
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
 //seccion trabajos
 .main_t {
   @include main;
@@ -372,7 +439,7 @@
     border-radius: 30px;
     padding: 15px;
     transform: scale(0.99);
-
+    position: relative;
     border: 2px solid $third--color;
     margin: 10px 0px;
     &:hover {
@@ -388,9 +455,25 @@
     h2 {
       font-size: 2rem;
     }
+    .card--span {
+
+      position: absolute;
+      top: 10px; /* Ajusta la distancia desde arriba según tu diseño */
+      right: 10px; /* Ajusta la distancia desde la derecha según tu diseño */
+
+      
+      .span-icon--github{
+        width: 37px;
+        text-align: center;
+        margin: 10px;
+        padding: 5px 10px;
+
+      }
+    }
     .main--card--p {
       display: flex;
-      align-items: center;
+      align-items: start;
+      padding: 10px 0px;
       overflow-y: hidden;
       width: 100%;
       height: 100%;
