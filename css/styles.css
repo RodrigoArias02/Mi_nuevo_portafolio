@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
@@ -356,7 +358,7 @@ body {
   min-height: 100vh;
   padding: 10% 5%;
 }
-.main--sobre_mi .main--div:nth-child(2) {
+.main--sobre_mi .main--div:nth-child(2n) {
   background: #323744;
 }
 .main--sobre_mi .main--div .main--content {
@@ -420,7 +422,7 @@ body {
   height: min-content;
 }
 .main--sobre_mi .main--div .main--img_titulo img {
-  max-width: 420px;
+  max-width: 600px;
   min-width: 250px;
   width: 100%;
   opacity: 0;
@@ -695,6 +697,7 @@ body {
   border-radius: 30px;
   padding: 15px;
   transform: scale(0.99);
+  position: relative;
   border: 2px solid #323744;
   margin: 10px 0px;
 }
@@ -712,16 +715,20 @@ body {
   font-size: 2rem;
 }
 .main_t .main--card .card--span {
-  display: flex;
-  width: 100%;
-  height: 100%;
   position: absolute;
-  justify-content: end;
-  align-items: start;
+  top: 10px; /* Ajusta la distancia desde arriba según tu diseño */
+  right: 10px; /* Ajusta la distancia desde la derecha según tu diseño */
+}
+.main_t .main--card .card--span .span-icon--github {
+  width: 37px;
+  text-align: center;
+  margin: 10px;
+  padding: 5px 10px;
 }
 .main_t .main--card .main--card--p {
   display: flex;
-  align-items: center;
+  align-items: start;
+  padding: 10px 0px;
   overflow-y: hidden;
   width: 100%;
   height: 100%;

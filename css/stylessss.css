@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @keyframes slideRight {
   0% {
@@ -356,7 +357,7 @@ body {
   min-height: 100vh;
   padding: 10% 5%;
 }
-.main--sobre_mi .main--div:nth-child(2) {
+.main--sobre_mi .main--div:nth-child(2n) {
   background: #323744;
 }
 .main--sobre_mi .main--div .main--content {
@@ -420,7 +421,7 @@ body {
   height: min-content;
 }
 .main--sobre_mi .main--div .main--img_titulo img {
-  max-width: 420px;
+  max-width: 600px;
   min-width: 250px;
   width: 100%;
   opacity: 0;
@@ -587,7 +588,8 @@ body {
   overflow-x: hidden;
 }
 .main_contact .main_contact--section form textarea,
-.main_contact .main_contact--section form input, .main_contact .main_contact--section form select {
+.main_contact .main_contact--section form input,
+.main_contact .main_contact--section form select {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
@@ -598,7 +600,8 @@ body {
   border: 0px;
 }
 .main_contact .main_contact--section form textarea:focus,
-.main_contact .main_contact--section form input:focus, .main_contact .main_contact--section form select:focus {
+.main_contact .main_contact--section form input:focus,
+.main_contact .main_contact--section form select:focus {
   outline: none;
 }
 .main_contact .main_contact--section form input {
@@ -693,6 +696,7 @@ body {
   border-radius: 30px;
   padding: 15px;
   transform: scale(0.99);
+  position: relative;
   border: 2px solid #323744;
   margin: 10px 0px;
 }
@@ -709,9 +713,21 @@ body {
 .main_t .main--card h2 {
   font-size: 2rem;
 }
+.main_t .main--card .card--span {
+  position: absolute;
+  top: 10px; /* Ajusta la distancia desde arriba según tu diseño */
+  right: 10px; /* Ajusta la distancia desde la derecha según tu diseño */
+}
+.main_t .main--card .card--span .span-icon--github {
+  width: 37px;
+  text-align: center;
+  margin: 10px;
+  padding: 5px 10px;
+}
 .main_t .main--card .main--card--p {
   display: flex;
-  align-items: center;
+  align-items: start;
+  padding: 10px 0px;
   overflow-y: hidden;
   width: 100%;
   height: 100%;
@@ -790,6 +806,57 @@ body {
 .main_t .main--card .main--card_footer article .bxs-file-json {
   color: #9572a1;
 }
+.main_t .card-2 {
+  height: 100%;
+  max-width: 350px;
+  min-height: 495px;
+  max-height: 495px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  margin: 10px;
+}
+.main_t .card-2 .container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 195px;
+  overflow: hidden;
+}
+.main_t .card-2 .container-img img {
+  width: 100%;
+}
+.main_t .card-2 .container-articles {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  padding: 10px;
+}
+.main_t .card-2 .container-articles .article-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+.main_t .card-2 .container-articles .article-card > * {
+  margin: 5px 0px;
+}
+.main_t .card-2 .container-articles .article-card-button {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+}
+.main_t .card-2 .container-articles .article-card-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
 
 .footer {
   display: flex;
@@ -849,4 +916,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=styless.css.map */
+/*# sourceMappingURL=stylessss.css.map */

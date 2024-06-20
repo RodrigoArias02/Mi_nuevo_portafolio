@@ -15,7 +15,7 @@ session_start(); // Iniciar la sesión
       name="keywords"
       content="C, C++, HTML5, CSS3, SASS, JavaScript, Node.js, Express, React.js, Python, MySQL, MongoDB, PHP, Visual Basic, JSON, programación, desarrollo web, desarrollo de software, aplicaciones móviles, proyectos de programación"
     />
-    <link rel="stylesheet" href="../css/styless.css" />
+    <link rel="stylesheet" href="../css/stylessss.css" />
 
     <link rel="icon" href="../imgs/favicon.ico" />
 

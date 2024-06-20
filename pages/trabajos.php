@@ -35,10 +35,13 @@ session_start(); // Iniciar la sesión
     content="Bienvenido a mi portafolio de programación, donde podrás ver mis proyectos y habilidades en el desarrollo web, software y aplicaciones móviles. Descubre cómo he resuelto problemas de programación y cómo he utilizado las tecnologías más actuales para crear soluciones innovadoras." />
   <meta name="keywords"
     content="C, C++, HTML5, CSS3, SASS, JavaScript, Node.js, Express, React.js, Python, MySQL, MongoDB, PHP, Visual Basic, JSON, programación, desarrollo web, desarrollo de software, aplicaciones móviles, proyectos de programación" />
-  <link rel="stylesheet" href="../css/stylesss.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="icon" href="../imgs/favicon.ico" />
   <title>Sombre mi</title>
+  <style>
+
+  </style>
 </head>
 
 <body>
@@ -106,6 +109,7 @@ session_start(); // Iniciar la sesión
             </article>
           </section>
         </div>
+
         <?php
 
       }

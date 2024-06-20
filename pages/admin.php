@@ -31,7 +31,7 @@ if (!$result) {
         content="Bienvenido a mi portafolio de programación, donde podrás ver mis proyectos y habilidades en el desarrollo web, software y aplicaciones móviles. Descubre cómo he resuelto problemas de programación y cómo he utilizado las tecnologías más actuales para crear soluciones innovadoras.">
     <meta name="keywords"
         content="C, C++, HTML5, CSS3, SASS, JavaScript, Node.js, Express, React.js, Python, MySQL, MongoDB, PHP, Visual Basic, JSON, programación, desarrollo web, desarrollo de software, aplicaciones móviles, proyectos de programación">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stylessss.css">
     <link rel="icon" href="../imgs/favicon.ico">
     <title>Admin</title>
 </head>
